@@ -2,7 +2,7 @@
    Eigene Dateien: zuerst aus dem Netz (damit Updates sofort ankommen), offline aus dem Speicher.
    Bibliotheken (Texterkennung/Barcode): einmal laden, danach aus dem Speicher.
    Deine Tagebuch-Daten liegen NICHT hier, sondern in IndexedDB – der Cache enthält nur Programmdateien. */
-const CACHE = 'nutrilog-v2.25';
+const CACHE = 'nutrilog-v2.26';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './icons/favicon-64.png'];
 
 self.addEventListener('install', e => {
