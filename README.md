@@ -5,7 +5,7 @@ Alle Daten bleiben auf deinem Gerät.
 
 👉 **App öffnen:** https://mrkero.github.io/NutriLog/
 
-![Version](https://img.shields.io/badge/Version-2.22-0f766e) ![Offline](https://img.shields.io/badge/offline-nutzbar-16a34a) ![Sprachen](https://img.shields.io/badge/Sprachen-DE%20%C2%B7%20EN%20%C2%B7%20TR-5b4bdb) ![Datenschutz](https://img.shields.io/badge/Daten-nur%20lokal-e0566b)
+![Version](https://img.shields.io/badge/Version-2.24-0f766e) ![Offline](https://img.shields.io/badge/offline-nutzbar-16a34a) ![Sprachen](https://img.shields.io/badge/Sprachen-DE%20%C2%B7%20EN%20%C2%B7%20TR-5b4bdb) ![Datenschutz](https://img.shields.io/badge/Daten-nur%20lokal-e0566b)
 
 NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – als einzelne Web-App, die man auf dem iPhone (oder jedem anderen Gerät) wie eine normale App auf den Home-Bildschirm legen kann. Es gibt keinen Server, keine Anmeldung und keine Werbung.
 
@@ -19,6 +19,8 @@ NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – 
 - Schnelleintrag, Rezepte, gespeicherte Mahlzeiten und „Vortag kopieren“
 - Wasser, Supplements mit eigener Serie, Tagesnotiz mit Schlaf und Energie
 - Tageswechsel per Wischgeste
+- **Kopieren in die Zukunft:** Mahlzeit oder ganzen Tag auf kommende Tage übernehmen (Meal-Prep)
+- **Fasten-Timer** (12:12 bis 23:1) mit Verlauf
 
 ### 🔥 Verbrauch
 - Grundumsatz, Alltag, Schritte, Arbeit, Sport (MET-Werte) und Verdauung
@@ -31,6 +33,7 @@ NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – 
 - Körpertyp-Karten für **BMI × Körperfett** und **FFMI × Körperfett**, jeweils mit Leiste, Gewichtstabelle und Verlauf
 - „Echter Verbrauch“, berechnet aus Gewichtstrend und gegessenen Kalorien
 - Wochenberichte mit Punktzahl
+- **Erfolge & Abzeichen** – 24 Abzeichen für Serien, Eiweiß, Wasser, Fasten und mehr
 
 ### 🎯 Ziele
 - Kalorienziel mit wählbarem Tempo (abnehmen, halten oder aufbauen) und Makro-Verteilung
@@ -39,6 +42,7 @@ NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – 
 
 ### 🗓️ Übersicht
 - Wochen- und Monatsansicht mit Kalender, Diagrammen und Tagesliste
+- **Jahresrückblick** mit Monatsdiagramm, Jahreswerten, Top-Lebensmitteln und Highlights
 - Notizen durchsuchen sowie Motivationssprüche und persönliche Fakten
 
 ### ✨ Sonstiges
@@ -48,6 +52,7 @@ NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – 
 - **3 Sprachen:** Deutsch, English und Türkçe
 - Reiter frei anordnen und Bereiche ausblenden
 - Töne, Animationen, Streaks mit Meilensteinen und ein paar versteckte Überraschungen 🥚
+- **Teilen per Link:** Lebensmittel, Rezepte und Mahlzeiten an Freunde schicken – ein Tipp auf den Link übernimmt sie ins eigene NutriLog
 - 73 mitgelieferte Standard-Lebensmittel, die sich entfernen und wiederherstellen lassen
 - Eingabeprüfung für alle Felder, damit unrealistische Werte gar nicht erst gespeichert werden
 
@@ -55,13 +60,18 @@ NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – 
 
 ## Installation auf dem iPhone
 
-1. https://mrkero.github.io/NutriLog/ in **Safari** öffnen.
+1. https://mrkero.github.io/NutriLog/ in **Safari** öffnen (nicht in Chrome – nur Safari kann Web-Apps auf den Home-Bildschirm legen).
 2. Auf das Teilen-Symbol tippen und **„Zum Home-Bildschirm“** wählen.
 3. Ab dann über das Icon starten. Die App läuft im Vollbild mit eigenem Icon und funktioniert auch offline.
 
 Die App funktioniert genauso auf Android (Chrome → „Zum Startbildschirm hinzufügen“) und am Desktop.
 
-> **Wichtig:** Die Home-Bildschirm-App hat einen eigenen Speicher, getrennt von Safari. Daten aus einer anderen Version überträgst du mit einem Backup: Einstellungen → „Backup sichern“ und in der neuen App „Backup importieren“.
+> **Wichtig:** Die Home-Bildschirm-App hat einen eigenen Speicher, getrennt von Safari. Daten aus einer anderen Version überträgst du mit einem Backup: In der alten Version Einstellungen → „Backup sichern“, dann startet die neue App mit dem Einrichtungsdialog → **„📂 Ich habe ein Backup – wiederherstellen“**.
+
+### Daten sicher halten
+- Einstellungen → „Dauerhaft gesichert“ sollte **ja** zeigen.
+- Das Icon **nicht** vom Home-Bildschirm löschen – damit wird auch der Speicher gelöscht.
+- Regelmäßig **„Backup sichern“** → „In Dateien sichern“ → iCloud Drive. Die App erinnert dich daran (alle 7, 14 oder 30 Tage).
 
 ---
 
@@ -84,10 +94,9 @@ Die App funktioniert genauso auf Android (Chrome → „Zum Startbildschirm hinz
 | `index.html` | Die komplette App (HTML, CSS und JavaScript in einer Datei) |
 | `sw.js` | Service Worker für die Offline-Nutzung und Updates |
 | `manifest.webmanifest` | Name, Icons und Vollbild für den Home-Bildschirm |
-| `icons/` | App-Icons |
-| `ANLEITUNG.md` | Ausführliche Anleitung für GitHub Pages und das iPhone |
+| `icons/` | App-Icons (Unterordner für die wählbaren Icons) |
 
-Die App ist in reinem JavaScript ohne Framework und ohne Build-Schritt geschrieben. Ein Update geht so: `index.html` (und bei Bedarf `sw.js`) ersetzen. Beim nächsten Start mit Internet lädt die App die neue Version, und die Daten bleiben erhalten.
+Alle Dateien gehören zusammen in **denselben Ordner** – bitte nichts umbenennen. Die App ist in reinem JavaScript ohne Framework und ohne Build-Schritt geschrieben.
 
 ---
 
