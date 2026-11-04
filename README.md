@@ -5,7 +5,7 @@ Alle Daten bleiben auf deinem Gerät.
 
 👉 **App öffnen:** https://mrkero.github.io/NutriLog/
 
-![Version](https://img.shields.io/badge/Version-2.29-0f766e) ![Offline](https://img.shields.io/badge/offline-nutzbar-16a34a) ![Sprachen](https://img.shields.io/badge/Sprachen-DE%20%C2%B7%20EN%20%C2%B7%20TR-5b4bdb) ![Datenschutz](https://img.shields.io/badge/Daten-nur%20lokal-e0566b)
+![Version](https://img.shields.io/badge/Version-2.30-0f766e) ![Offline](https://img.shields.io/badge/offline-nutzbar-16a34a) ![Sprachen](https://img.shields.io/badge/Sprachen-DE%20%C2%B7%20EN%20%C2%B7%20TR-5b4bdb) ![Datenschutz](https://img.shields.io/badge/Daten-nur%20lokal-e0566b)
 
 NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – als einzelne Web-App, die man auf dem iPhone (oder jedem anderen Gerät) wie eine normale App auf den Home-Bildschirm legen kann. Es gibt keinen Server, keine Anmeldung und keine Werbung.
 
@@ -18,7 +18,7 @@ NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – 
 - Lebensmittel suchen, per **Barcode** scannen (Open Food Facts) oder die **Nährwerttabelle fotografieren** (Texterkennung im Browser)
 - Schnelleintrag, Rezepte, gespeicherte Mahlzeiten und „Vortag kopieren“
 - Wasser, Supplements mit eigener Serie, Tagesnotiz mit Schlaf und Energie
-- Tageswechsel per Wischgeste
+- Tageswechsel per Wischgeste; Einträge nach links wischen zum Löschen
 - **Kopieren in die Zukunft:** Mahlzeit oder ganzen Tag auf kommende Tage übernehmen (Meal-Prep)
 - **Fasten-Timer** (12:12 bis 23:1) mit Verlauf
 
@@ -41,7 +41,8 @@ NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – 
 - Wählbare wissenschaftliche Formeln: Mifflin-St Jeor, Katch-McArdle, Cunningham, Harris-Benedict und WHO/FAO/UNU
 
 ### 🗓️ Übersicht
-- Wochen- und Monatsansicht mit Kalender, Diagrammen und Tagesliste
+- Wochen- und Monatsansicht mit Kalender, Diagrammen (Ampelfarben + 7-Tage-Schnitt) und Tagesliste
+- **Trends:** Wochentag-Muster, Eiweiß pro kg Körpergewicht, Mahlzeiten-Anteile sowie Schlaf & Energie im Vergleich zu den Kalorien
 - **Jahresrückblick** mit Monatsdiagramm, Jahreswerten, Top-Lebensmitteln und Highlights
 - Notizen durchsuchen sowie Motivationssprüche und persönliche Fakten
 
