@@ -5,7 +5,7 @@ Alle Daten bleiben auf deinem Gerät.
 
 👉 **App öffnen:** https://mrkero.github.io/NutriLog/
 
-![Version](https://img.shields.io/badge/Version-2.27-0f766e) ![Offline](https://img.shields.io/badge/offline-nutzbar-16a34a) ![Sprachen](https://img.shields.io/badge/Sprachen-DE%20%C2%B7%20EN%20%C2%B7%20TR-5b4bdb) ![Datenschutz](https://img.shields.io/badge/Daten-nur%20lokal-e0566b)
+![Version](https://img.shields.io/badge/Version-2.28-0f766e) ![Offline](https://img.shields.io/badge/offline-nutzbar-16a34a) ![Sprachen](https://img.shields.io/badge/Sprachen-DE%20%C2%B7%20EN%20%C2%B7%20TR-5b4bdb) ![Datenschutz](https://img.shields.io/badge/Daten-nur%20lokal-e0566b)
 
 NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – als einzelne Web-App, die man auf dem iPhone (oder jedem anderen Gerät) wie eine normale App auf den Home-Bildschirm legen kann. Es gibt keinen Server, keine Anmeldung und keine Werbung.
 
@@ -49,6 +49,8 @@ NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – 
 - **16 Designs** (u. a. Glas-Designs mit Farbverläufen), jeweils hell und dunkel
 - 4 wählbare App-Icons („Bunte Schale“, „Blatt & Puls“, „Wrap“ und „Gemüse-N“)
 - Mit 2 Fingern wischen wechselt den Reiter, mit 1 Finger den Tag
+- Fest stehende Kopfzeile und schwebende Reiter-Leiste als abgerundete Kapsel – der Inhalt läuft sichtbar darunter weiter
+- **Automatische Updates abschaltbar** (Einstellungen → Über): dann bleibt die App auf ihrer Version, bis du selbst „Nach Updates suchen“ → „Jetzt laden“ tippst
 - **3 Sprachen:** Deutsch, English und Türkçe
 - Reiter frei anordnen und Bereiche ausblenden
 - Töne, Animationen, Streaks mit Meilensteinen und ein paar versteckte Überraschungen 🥚
