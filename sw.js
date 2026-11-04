@@ -4,7 +4,7 @@
                              Einstellungen „Nach Updates suchen“ → „Jetzt laden“ tippst.
    Bibliotheken (Texterkennung/Barcode): einmal laden, danach aus dem Speicher.
    Deine Tagebuch-Daten liegen NICHT hier, sondern in IndexedDB – der Cache enthält nur Programmdateien. */
-const CACHE = 'nutrilog-v2.28';
+const CACHE = 'nutrilog-v2.29';
 const FLAGS = 'nutrilog-flags';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './icons/favicon-64.png'];
 
