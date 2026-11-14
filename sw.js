@@ -5,7 +5,7 @@
    Bibliotheken (Texterkennung/Barcode): einmal laden, danach aus dem Speicher.
    Lebensmittel-Datenbank (bls-*.json): eigener Speicher, wird nur einmal geladen und bei App-Updates nicht gelöscht.
    Deine Tagebuch-Daten liegen NICHT hier, sondern in IndexedDB – der Cache enthält nur Programmdateien. */
-const CACHE = 'nutrilog-v2.34';
+const CACHE = 'nutrilog-v2.35';
 const FLAGS = 'nutrilog-flags';
 const DATA = 'nutrilog-data';   // Lebensmittel-Datenbank (BLS) – bleibt über App-Updates hinweg erhalten
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './icons/favicon-64.png'];
