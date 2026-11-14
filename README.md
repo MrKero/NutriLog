@@ -5,7 +5,7 @@ Alle Daten bleiben auf deinem Gerät.
 
 👉 **App öffnen:** https://mrkero.github.io/NutriLog/
 
-![Version](https://img.shields.io/badge/Version-2.33-0f766e) ![Offline](https://img.shields.io/badge/offline-nutzbar-16a34a) ![Sprachen](https://img.shields.io/badge/Sprachen-DE%20%C2%B7%20EN%20%C2%B7%20TR-5b4bdb) ![Datenschutz](https://img.shields.io/badge/Daten-nur%20lokal-e0566b)
+![Version](https://img.shields.io/badge/Version-2.34-0f766e) ![Offline](https://img.shields.io/badge/offline-nutzbar-16a34a) ![Sprachen](https://img.shields.io/badge/Sprachen-DE%20%C2%B7%20EN%20%C2%B7%20TR-5b4bdb) ![Datenschutz](https://img.shields.io/badge/Daten-nur%20lokal-e0566b)
 
 NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – als einzelne Web-App, die man auf dem iPhone (oder jedem anderen Gerät) wie eine normale App auf den Home-Bildschirm legen kann. Es gibt keinen Server, keine Anmeldung und keine Werbung.
 
@@ -16,6 +16,8 @@ NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – 
 ### 📒 Tagebuch
 - Frühstück, Mittagessen, Abendessen und Snacks mit Kalorien, Eiweiß, Kohlenhydraten, Fett, Zucker, Ballaststoffen und Salz
 - Lebensmittel suchen, per **Barcode** scannen (Open Food Facts) oder die **Nährwerttabelle fotografieren** (Texterkennung im Browser)
+- **Lebensmittel-Datenbank:** 7.140 Grundnahrungsmittel aus dem Bundeslebensmittelschlüssel (BLS 4.0) – offline, direkt beim Tippen durchsuchbar
+- **Online-Suche** nach Markenprodukten bei Open Food Facts (auf Knopfdruck)
 - Schnelleintrag, Rezepte, gespeicherte Mahlzeiten und „Vortag kopieren“
 - Menge per Gramm, Portions-Schnellwahl oder „× Portion“ (z. B. 5 Portionen)
 - Wasser, Supplements mit eigener Serie, Tagesnotiz mit Schlaf und Energie
@@ -86,6 +88,8 @@ Die App funktioniert genauso auf Android (Chrome → „Zum Startbildschirm hinz
 - Es gibt kein Konto, keinen Server, keine Cookies und keine Analyse- oder Werbe-Tracker.
 - Das Internet wird nur in zwei Fällen genutzt:
   - **Barcode-Suche:** Nur die Barcode-Nummer wird an Open Food Facts gesendet.
+  - **Online-Suche:** Nur wenn du auf „Online suchen“ tippst, geht dein Suchbegriff an Open Food Facts.
+  - **Lebensmittel-Datenbank (BLS):** wird beim ersten Suchen einmalig von GitHub Pages geladen und danach offline gespeichert – Suchbegriffe verlassen das Gerät nicht.
   - **Texterkennung:** Beim ersten Gebrauch werden die Programmbibliotheken und Sprachdaten von jsDelivr bzw. unpkg geladen.
 - Fotos und Kamerabild werden ausschließlich im Browser verarbeitet.
 - **Backups** (.json) und ein **CSV-Export** für Excel sind jederzeit möglich.
@@ -98,6 +102,7 @@ Die App funktioniert genauso auf Android (Chrome → „Zum Startbildschirm hinz
 |---|---|
 | `index.html` | Die komplette App (HTML, CSS und JavaScript in einer Datei) |
 | `sw.js` | Service Worker für die Offline-Nutzung und Updates |
+| `bls-4.0.json` | Lebensmittel-Datenbank (Bundeslebensmittelschlüssel 4.0, ca. 0,85 MB, komprimiert ca. 260 KB) |
 | `manifest.webmanifest` | Name, Icons und Vollbild für den Home-Bildschirm |
 | `icons/` | App-Icons (Unterordner für die wählbaren Icons) |
 
@@ -112,6 +117,7 @@ Alle Berechnungen (Grundumsatz, Verbrauch, Makros und Prognosen) sind Schätzung
 ## Quellen & verwendete Projekte
 
 - [Open Food Facts](https://world.openfoodfacts.org) – Produktdaten, Lizenz: ODbL 1.0
+- [Bundeslebensmittelschlüssel (BLS) 4.0](https://www.blsdb.de) – Max Rubner-Institut (2025): Bundeslebensmittelschlüssel (BLS), Version 4.0. Karlsruhe. Kostenfrei und ohne Lizenzbarrieren nutzbar.
 - [Tesseract.js](https://github.com/naptha/tesseract.js) – Texterkennung, Lizenz: Apache 2.0
 - [ZXing (zxing-js)](https://github.com/zxing-js/library) – Barcode-Erkennung, Lizenz: Apache 2.0
 - MET-Werte: 2024 Adult Compendium of Physical Activities

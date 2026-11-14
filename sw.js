@@ -3,9 +3,11 @@
    Automatische Updates AUS: eigene Dateien aus dem Speicher – die App bleibt auf ihrer Version, bis du in den
                              Einstellungen „Nach Updates suchen“ → „Jetzt laden“ tippst.
    Bibliotheken (Texterkennung/Barcode): einmal laden, danach aus dem Speicher.
+   Lebensmittel-Datenbank (bls-*.json): eigener Speicher, wird nur einmal geladen und bei App-Updates nicht gelöscht.
    Deine Tagebuch-Daten liegen NICHT hier, sondern in IndexedDB – der Cache enthält nur Programmdateien. */
-const CACHE = 'nutrilog-v2.33';
+const CACHE = 'nutrilog-v2.34';
 const FLAGS = 'nutrilog-flags';
+const DATA = 'nutrilog-data';   // Lebensmittel-Datenbank (BLS) – bleibt über App-Updates hinweg erhalten
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './icons/favicon-64.png'];
 
 async function autoOn() {
@@ -56,6 +58,13 @@ self.addEventListener('fetch', e => {
   if (url.hostname.endsWith('openfoodfacts.org')) return;            // Produktdaten immer live
   if (url.origin === self.location.origin) {
     if (url.pathname.endsWith('/__auto-update')) return;
+    if (/\/bls-[\d.]+\.json$/.test(url.pathname)) {           // Datenbank: einmal laden, danach offline
+      e.respondWith(caches.open(DATA).then(c => c.match(req, { ignoreSearch: true }).then(m => m || fetch(req).then(res => {
+        if (res.ok) { c.keys().then(ks => ks.forEach(k => { if (k.url !== res.url && /\/bls-[\d.]+\.json/.test(k.url)) c.delete(k); })); c.put(req, res.clone()); }
+        return res;
+      }))));
+      return;
+    }
     const network = () => fetch(req, { cache: 'no-cache' }).then(res => {
       if (res.ok && !url.searchParams.has('nocache')) { const copy = res.clone(); caches.open(CACHE).then(c => c.put(req, copy)); }
       return res;
