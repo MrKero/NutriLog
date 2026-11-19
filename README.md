@@ -5,7 +5,7 @@ Alle Daten bleiben auf deinem Gerät.
 
 👉 **App öffnen:** https://mrkero.github.io/NutriLog/
 
-![Version](https://img.shields.io/badge/Version-2.35-0f766e) ![Offline](https://img.shields.io/badge/offline-nutzbar-16a34a) ![Sprachen](https://img.shields.io/badge/Sprachen-DE%20%C2%B7%20EN%20%C2%B7%20TR-5b4bdb) ![Datenschutz](https://img.shields.io/badge/Daten-nur%20lokal-e0566b)
+![Version](https://img.shields.io/badge/Version-2.36-0f766e) ![Offline](https://img.shields.io/badge/offline-nutzbar-16a34a) ![Sprachen](https://img.shields.io/badge/Sprachen-DE%20%C2%B7%20EN%20%C2%B7%20TR-5b4bdb) ![Datenschutz](https://img.shields.io/badge/Daten-nur%20lokal-e0566b)
 
 NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – als einzelne Web-App, die man auf dem iPhone (oder jedem anderen Gerät) wie eine normale App auf den Home-Bildschirm legen kann. Es gibt keinen Server, keine Anmeldung und keine Werbung.
 
@@ -37,6 +37,7 @@ NutriLog ist ein Kalorien- und Makro-Tracker im Stil bekannter Fitness-Apps – 
 - „Echter Verbrauch“, berechnet aus Gewichtstrend und gegessenen Kalorien
 - Wochenberichte mit Punktzahl
 - **Erfolge & Abzeichen** – 24 Abzeichen für Serien, Eiweiß, Wasser, Fasten und mehr (Flamme oben antippen)
+- **Urlaubsmodus** – Serie für Urlaub einfrieren; Erinnerungen und Kalorienfarben ruhen, Urlaubstage fließen in keine Auswertung ein
 
 ### 🎯 Ziele
 - Kalorienziel mit wählbarem Tempo (abnehmen, halten oder aufbauen) und Makro-Verteilung
